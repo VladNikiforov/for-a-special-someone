@@ -51,7 +51,7 @@ function updateCountdown() {
   if (timeLeft <= 0) {
     const countdown = document.getElementById('countdown')
     countdown.style.fontFamily = "'Comic Sans MS', cursive"
-    countdown.textContent = "🎉 Congrats! You're now 1 year older! 🎉 (haha, oldie)"
+    countdown.textContent = "🎉 You're officially an oldie now! 🎉"
 
     confetti({
       particleCount: 100,
@@ -92,7 +92,7 @@ function updateCountdown() {
   setTimeout(updateCountdown, 1000)
 }
 
-createBoxes(document.getElementById('days-box'), 2)
+createBoxes(document.getElementById('days-box'), 3)
 createBoxes(document.getElementById('hours-box'), 2)
 createBoxes(document.getElementById('minutes-box'), 2)
 createBoxes(document.getElementById('seconds-box'), 2)
